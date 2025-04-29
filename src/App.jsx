@@ -38,10 +38,8 @@ function App() {
             onChange={handleTextChange} 
         />
 
-        {/* Container for the download button */}
-        {/* --- Conditionally Render Download Link --- */}
-        {/* Only show the link if there is some text entered */}
-        {pdfText.trim() ? ( // Check if pdfText is not just whitespace
+        
+        {pdfText.trim() ? ( 
             <div className="button-container">
                 <PDFDownloadLink
                     // Pass the CURRENT value from the state (pdfText) to the document
